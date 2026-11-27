@@ -124,6 +124,10 @@ nav {
 aside {
     position: sticky;
     top: 110px;
+    align-self: start;
+
+    max-height: calc(100vh - 130px);
+    overflow-y: auto;
 }
 
 .portrait {
@@ -334,10 +338,13 @@ footer {
     /* Sidebar */
 
     aside {
-        position: static;
-        border-bottom: 1px solid var(--line);
-        padding-bottom: 24px;
-    }
+    position: static;
+    max-height: none;
+    overflow: visible;
+
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 24px;
+}
 
     /* Profile photo */
 
