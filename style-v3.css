@@ -225,9 +225,10 @@ p {
 
 /* Justify paragraphs on the homepage */
 
-article > p:not(.eyebrow) {
-    text-align: justify;
+article p:not(.eyebrow) {
+    text-align: justify !important;
     text-justify: inter-word;
+    text-align-last: left;
 }
 
 
