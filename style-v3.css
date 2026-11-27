@@ -251,9 +251,18 @@ article p:not(.eyebrow) {
    ========================================= */
 
 section {
-    border-top: 1px solid var(--line);
-    margin-top: 32px;
-    padding-top: 25px;
+    border-top: none;
+    margin-top: 24px;
+    padding: 28px;
+    border-radius: 6px;
+}
+
+article > section:nth-of-type(odd) {
+    background-color: #f4f6f8;
+}
+
+article > section:nth-of-type(even) {
+    background-color: #ffffff;
 }
 
 
