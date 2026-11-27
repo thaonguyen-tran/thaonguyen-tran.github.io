@@ -51,12 +51,9 @@ a:focus-visible {
    ========================================= */
 
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
-
+    z-index: 1000;
     background: #ffffff;
     border-bottom: 1px solid var(--line);
 }
@@ -126,7 +123,7 @@ nav {
 
 aside {
     position: sticky;
-    top: 30px;
+    top: 110px;
 }
 
 .portrait {
