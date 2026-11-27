@@ -51,12 +51,14 @@ a:focus-visible {
    ========================================= */
 
 header {
-    border-bottom: 1px solid var(--line);
-    background: #ffffff;
-
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 1000;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+
+    background: #ffffff;
+    border-bottom: 1px solid var(--line);
 }
 
 nav {
@@ -307,6 +309,10 @@ footer {
 @media (max-width: 760px) {
 
     /* Navigation bar */
+
+   body {
+    padding-top: 150px;
+}
 
     nav {
         flex-direction: column;
