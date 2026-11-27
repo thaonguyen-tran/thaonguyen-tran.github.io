@@ -116,17 +116,24 @@ nav {
     align-items: start;
 }
 
+.layout > article {
+    grid-column: 2;
+    min-width: 0;
+}
+
 
 /* =========================================
    05. SIDEBAR & PROFILE PHOTO
    ========================================= */
 
 aside {
-    position: sticky;
-    top: 110px;
-    align-self: start;
+    position: fixed;
+    top: 145px;
+    left: max(30px, calc((100% - 1120px) / 2 + 30px));
 
-    max-height: calc(100vh - 130px);
+    width: 230px;
+
+    max-height: calc(100vh - 165px);
     overflow-y: auto;
 }
 
@@ -339,11 +346,17 @@ footer {
 
     aside {
     position: static;
+
+    width: auto;
     max-height: none;
     overflow: visible;
 
     border-bottom: 1px solid var(--line);
     padding-bottom: 24px;
+}
+
+.layout > article {
+    grid-column: 1;
 }
 
     /* Profile photo */
